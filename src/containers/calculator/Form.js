@@ -92,7 +92,6 @@ class CalculatorForm extends React.Component {
                         </label>
                         <select onChange={this.handleChange} name="operation" className="form-control">
                             {this.getOptions()}
-                            <option name="nnnkj">ajhvhva</option>
                         </select>
                     </div>
 
@@ -108,7 +107,11 @@ class CalculatorForm extends React.Component {
                             Results: <label>{ this.props.calculator.results }</label>
                         </span>
                         :
-                        ''
+                         this.props.calculator.results === 0 ?
+                             <span className="pull-right">
+                                 Results: <label>{this.props.calculator.results}</label>
+                             </span>
+                             : ''
                     }
                 </form>
             </div>
