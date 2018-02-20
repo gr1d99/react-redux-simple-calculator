@@ -12,7 +12,7 @@ import { calculate, clearResults } from "../../actions";
 // utils
 import { operations } from "../../utils";
 
-class CalculatorForm extends React.Component {
+export class CalculatorForm extends React.Component {
     constructor (props) {
         super (props); // call super class and it props
 
