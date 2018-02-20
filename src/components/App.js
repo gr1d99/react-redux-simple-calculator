@@ -7,7 +7,7 @@ import CalculatorForm from '../containers/calculator/Form';
 // css
 import '../static/app.css';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="App">
